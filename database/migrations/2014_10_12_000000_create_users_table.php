@@ -26,7 +26,6 @@ return new class extends Migration
             $table->rememberToken();
             $table->timestamps();
 
-            // 複合ユニークキー
             $table->unique(['provider_id', 'provider_name']);
         });
     }

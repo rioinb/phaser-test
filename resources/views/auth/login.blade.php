@@ -70,10 +70,17 @@
                                     @endif
                                 </div>
                             </div>
-                            <div class="row mb-0">
+                            <div class="row mb-3">
                                 <div class="col-md-8 offset-md-4">
                                     <a href="{{ route('socialOAuth', $provider = 'google') }}" class="btn btn-primary">
-                                        {{ __('Google') }}
+                                        {{ __('Login with Google') }}
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-8 offset-md-4">
+                                    <a href="{{ route('socialOAuth', $provider = 'github') }}" class="btn btn-primary">
+                                        {{ __('Login in with GitHub') }}
                                     </a>
                                 </div>
                             </div>

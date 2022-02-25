@@ -22,8 +22,8 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/auth/{provider}/redirect', function () {
-    return Socialite::driver('google')->redirect();
+Route::get('/auth/{provider}/redirect', function ($provider) {
+    return Socialite::driver($provider)->redirect();
 })->name('socialOAuth');;
 
 Route::get('/auth/{provider}/callback', function ($provider) {
@@ -51,5 +51,5 @@ Route::get('/auth/{provider}/callback', function ($provider) {
 
     Auth::login($user);
 
-    return redirect('/');
+    return redirect('/home');
 });
