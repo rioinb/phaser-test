@@ -4,6 +4,8 @@
  * building robust, powerful web applications using React + Laravel.
  */
 
+// const { default: Example } = require('./components/Example');
+
 require('./bootstrap');
 
 /**
@@ -12,4 +14,23 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-require('./components/Example');
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Example from './components/Example';
+import Memo from './components/Memo';
+
+function App() {
+    return (
+        <>
+            <Example />
+            <Memo />
+        </>
+    )
+}
+
+export default App;
+
+if (document.getElementById('app')) {
+    ReactDOM.render(<App />, document.getElementById('app'));
+}
