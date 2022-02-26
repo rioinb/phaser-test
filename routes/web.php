@@ -27,7 +27,7 @@ Route::get('/auth/{provider}/redirect', function ($provider) {
 })->name('socialOAuth');;
 
 Route::get('/auth/{provider}/callback', function ($provider) {
-    $socialUser = Socialite::driver($provider)->user();
+    $socialUser = Socialite::driver($provider)->stateless()->user();
 
     $user = User::where('provider_id', $socialUser->id)
         ->where('provider_name', $provider)->first();
