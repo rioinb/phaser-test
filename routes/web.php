@@ -53,3 +53,5 @@ Route::get('/auth/{provider}/callback', function ($provider) {
 
     return redirect('/home');
 });
+
+Route::resource('/memo', App\Http\Controllers\MemoController::class);

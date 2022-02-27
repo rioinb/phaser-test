@@ -10,6 +10,12 @@ class Memo extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'user_id',
+        'text',
+    ];
+
+
     public function User()
     {
         return $this->belongsTo(User::class);

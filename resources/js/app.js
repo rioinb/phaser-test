@@ -15,7 +15,7 @@ require('./bootstrap');
  */
 
 
-import React from 'react';
+import * as React from 'react';
 import ReactDOM from 'react-dom';
 import Example from './components/Example';
 import Memo from './components/Memo';
@@ -23,7 +23,6 @@ import Memo from './components/Memo';
 function App() {
     return (
         <>
-            <Example />
             <Memo />
         </>
     )
