@@ -100,10 +100,9 @@ class MemoController extends Controller
      * @param  \App\Models\Memo  $memo
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Request $request)
+    public function destroy($id)
     {
-        Memo::where('id', $request->id)->delete();
-        // Memo::where('id', $id)->delete();
+        Memo::where('id', $id)->delete();
         return response()->json([]);
     }
 }

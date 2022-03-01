@@ -12501,7 +12501,7 @@ __webpack_require__.r(__webpack_exports__);
 /** @jsxImportSource @emotion/react */
 
 
-var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5;
+var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6;
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
@@ -12604,7 +12604,8 @@ function Memo() {
 
   var deleteMemo = function deleteMemo(e) {
     var id = e.target.name;
-    axios__WEBPACK_IMPORTED_MODULE_3___default()["delete"]('/memo/' + id, {// id: id
+    axios__WEBPACK_IMPORTED_MODULE_3___default()["delete"]('/memo/' + id, {
+      id: id
     }).then(function () {
       var m = memos.filter(function (memo) {
         return memo.id.toString() !== id;
@@ -12667,6 +12668,7 @@ function Memo() {
                     name: memo.id,
                     className: "border-0",
                     children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+                      css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["pointer-events: none;"]))),
                       icon: _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_7__.faTrashCan
                     })
                   }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
@@ -12674,14 +12676,14 @@ function Memo() {
                       return handleCopy(memo.text);
                     },
                     className: "border-0",
-                    css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["margin-left: 0.5rem;"]))),
+                    css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["margin-left: 0.5rem;"]))),
                     children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
                       icon: _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_7__.faCopy
                     })
                   })]
                 })]
               }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_textarea_autosize__WEBPACK_IMPORTED_MODULE_5__["default"], {
-                css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["resize: none;"]))),
+                css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["resize: none;"]))),
                 className: "card-body",
                 defaultValue: memo.text,
                 name: memo.id,
@@ -12696,7 +12698,7 @@ function Memo() {
   });
 }
 
-var flex = (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n        display: flex;\n        justify-content: space-between;\n    "])));
+var flex = (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n        display: flex;\n        justify-content: space-between;\n    "])));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Memo);
 
 /***/ }),

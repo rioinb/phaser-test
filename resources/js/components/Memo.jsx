@@ -68,7 +68,7 @@ function Memo() {
         const id = e.target.name
         axios
             .delete('/memo/'+id, {
-                // id: id
+                id: id
             })
             .then(() => {
                 const m = memos.filter((memo)=> {
@@ -113,7 +113,9 @@ function Memo() {
                                         <div className="card-header" css={css`justify-content: space-between; display: flex;`}>
                                             <button onClick={updateMemo} disabled={editedTextKey !== memo.id.toString()} className="border-0">update memo</button>
                                             <div>
-                                                <button onClick={deleteMemo} name={memo.id} className="border-0"><FontAwesomeIcon icon={faTrashCan} /></button>
+                                                <button onClick={deleteMemo} name={memo.id} className="border-0">
+                                                    <FontAwesomeIcon css={css`pointer-events: none;`} icon={faTrashCan} />
+                                                </button>
                                                 <button onClick={() => handleCopy(memo.text)} className="border-0" css={css `margin-left: 0.5rem;`}><FontAwesomeIcon icon={faCopy} /></button>
                                             </div>
 
