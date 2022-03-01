@@ -17,7 +17,8 @@ class MemoFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'user_id' => 1,
+            'text' => $this->faker->text
         ];
     }
 }

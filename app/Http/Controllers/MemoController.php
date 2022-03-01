@@ -80,7 +80,18 @@ class MemoController extends Controller
      */
     public function update(Request $request, Memo $memo)
     {
-        //
+        $Memo = Memo::findOrFail($request->id)->fill([
+            'text' => $request->text
+        ])->save();
+
+        $user = auth()->user();
+        $memos = Memo::where('user_id', $user->id)->orderBy('created_at', 'DESC')->get()->toArray();
+        return $memos;
+
+        // return response()->json(
+        //     $Memo
+        // );
+
     }
 
     /**
@@ -89,8 +100,10 @@ class MemoController extends Controller
      * @param  \App\Models\Memo  $memo
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Memo $memo)
+    public function destroy(Request $request)
     {
-        //
+        Memo::where('id', $request->id)->delete();
+        // Memo::where('id', $id)->delete();
+        return response()->json([]);
     }
 }

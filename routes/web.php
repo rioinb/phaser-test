@@ -55,3 +55,5 @@ Route::get('/auth/{provider}/callback', function ($provider) {
 });
 
 Route::resource('/memo', App\Http\Controllers\MemoController::class);
+Route::put('/memo', [App\Http\Controllers\MemoController::class, 'update']);
+// Route::delete('/memo', [App\Http\Controllers\MemoController::class, 'destroy']);
