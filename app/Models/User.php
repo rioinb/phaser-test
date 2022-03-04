@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Models\Memo;
+use App\Models\MemoCategory;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -52,5 +53,10 @@ class User extends Authenticatable
     public function Memos()
     {
         return $this->hasMany(Memo::class);
+    }
+
+    public function Categories()
+    {
+        return $this->hasMany(MemoCategory::class);
     }
 }

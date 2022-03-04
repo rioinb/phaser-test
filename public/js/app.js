@@ -425,37 +425,6 @@ function murmur2(str) {
 
 /***/ }),
 
-/***/ "./node_modules/@emotion/is-prop-valid/dist/emotion-is-prop-valid.browser.esm.js":
-/*!***************************************************************************************!*\
-  !*** ./node_modules/@emotion/is-prop-valid/dist/emotion-is-prop-valid.browser.esm.js ***!
-  \***************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _emotion_memoize__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @emotion/memoize */ "./node_modules/@emotion/memoize/dist/emotion-memoize.browser.esm.js");
-
-
-var reactPropsRegex = /^((children|dangerouslySetInnerHTML|key|ref|autoFocus|defaultValue|defaultChecked|innerHTML|suppressContentEditableWarning|suppressHydrationWarning|valueLink|abbr|accept|acceptCharset|accessKey|action|allow|allowUserMedia|allowPaymentRequest|allowFullScreen|allowTransparency|alt|async|autoComplete|autoPlay|capture|cellPadding|cellSpacing|challenge|charSet|checked|cite|classID|className|cols|colSpan|content|contentEditable|contextMenu|controls|controlsList|coords|crossOrigin|data|dateTime|decoding|default|defer|dir|disabled|disablePictureInPicture|download|draggable|encType|enterKeyHint|form|formAction|formEncType|formMethod|formNoValidate|formTarget|frameBorder|headers|height|hidden|high|href|hrefLang|htmlFor|httpEquiv|id|inputMode|integrity|is|keyParams|keyType|kind|label|lang|list|loading|loop|low|marginHeight|marginWidth|max|maxLength|media|mediaGroup|method|min|minLength|multiple|muted|name|nonce|noValidate|open|optimum|pattern|placeholder|playsInline|poster|preload|profile|radioGroup|readOnly|referrerPolicy|rel|required|reversed|role|rows|rowSpan|sandbox|scope|scoped|scrolling|seamless|selected|shape|size|sizes|slot|span|spellCheck|src|srcDoc|srcLang|srcSet|start|step|style|summary|tabIndex|target|title|translate|type|useMap|value|width|wmode|wrap|about|datatype|inlist|prefix|property|resource|typeof|vocab|autoCapitalize|autoCorrect|autoSave|color|incremental|fallback|inert|itemProp|itemScope|itemType|itemID|itemRef|on|option|results|security|unselectable|accentHeight|accumulate|additive|alignmentBaseline|allowReorder|alphabetic|amplitude|arabicForm|ascent|attributeName|attributeType|autoReverse|azimuth|baseFrequency|baselineShift|baseProfile|bbox|begin|bias|by|calcMode|capHeight|clip|clipPathUnits|clipPath|clipRule|colorInterpolation|colorInterpolationFilters|colorProfile|colorRendering|contentScriptType|contentStyleType|cursor|cx|cy|d|decelerate|descent|diffuseConstant|direction|display|divisor|dominantBaseline|dur|dx|dy|edgeMode|elevation|enableBackground|end|exponent|externalResourcesRequired|fill|fillOpacity|fillRule|filter|filterRes|filterUnits|floodColor|floodOpacity|focusable|fontFamily|fontSize|fontSizeAdjust|fontStretch|fontStyle|fontVariant|fontWeight|format|from|fr|fx|fy|g1|g2|glyphName|glyphOrientationHorizontal|glyphOrientationVertical|glyphRef|gradientTransform|gradientUnits|hanging|horizAdvX|horizOriginX|ideographic|imageRendering|in|in2|intercept|k|k1|k2|k3|k4|kernelMatrix|kernelUnitLength|kerning|keyPoints|keySplines|keyTimes|lengthAdjust|letterSpacing|lightingColor|limitingConeAngle|local|markerEnd|markerMid|markerStart|markerHeight|markerUnits|markerWidth|mask|maskContentUnits|maskUnits|mathematical|mode|numOctaves|offset|opacity|operator|order|orient|orientation|origin|overflow|overlinePosition|overlineThickness|panose1|paintOrder|pathLength|patternContentUnits|patternTransform|patternUnits|pointerEvents|points|pointsAtX|pointsAtY|pointsAtZ|preserveAlpha|preserveAspectRatio|primitiveUnits|r|radius|refX|refY|renderingIntent|repeatCount|repeatDur|requiredExtensions|requiredFeatures|restart|result|rotate|rx|ry|scale|seed|shapeRendering|slope|spacing|specularConstant|specularExponent|speed|spreadMethod|startOffset|stdDeviation|stemh|stemv|stitchTiles|stopColor|stopOpacity|strikethroughPosition|strikethroughThickness|string|stroke|strokeDasharray|strokeDashoffset|strokeLinecap|strokeLinejoin|strokeMiterlimit|strokeOpacity|strokeWidth|surfaceScale|systemLanguage|tableValues|targetX|targetY|textAnchor|textDecoration|textRendering|textLength|to|transform|u1|u2|underlinePosition|underlineThickness|unicode|unicodeBidi|unicodeRange|unitsPerEm|vAlphabetic|vHanging|vIdeographic|vMathematical|values|vectorEffect|version|vertAdvY|vertOriginX|vertOriginY|viewBox|viewTarget|visibility|widths|wordSpacing|writingMode|x|xHeight|x1|x2|xChannelSelector|xlinkActuate|xlinkArcrole|xlinkHref|xlinkRole|xlinkShow|xlinkTitle|xlinkType|xmlBase|xmlns|xmlnsXlink|xmlLang|xmlSpace|y|y1|y2|yChannelSelector|z|zoomAndPan|for|class|autofocus)|(([Dd][Aa][Tt][Aa]|[Aa][Rr][Ii][Aa]|x)-.*))$/; // https://esbench.com/bench/5bfee68a4cd7e6009ef61d23
-
-var isPropValid = /* #__PURE__ */(0,_emotion_memoize__WEBPACK_IMPORTED_MODULE_0__["default"])(function (prop) {
-  return reactPropsRegex.test(prop) || prop.charCodeAt(0) === 111
-  /* o */
-  && prop.charCodeAt(1) === 110
-  /* n */
-  && prop.charCodeAt(2) < 91;
-}
-/* Z+1 */
-);
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (isPropValid);
-
-
-/***/ }),
-
 /***/ "./node_modules/@emotion/memoize/dist/emotion-memoize.browser.esm.js":
 /*!***************************************************************************!*\
   !*** ./node_modules/@emotion/memoize/dist/emotion-memoize.browser.esm.js ***!
@@ -1732,252 +1701,6 @@ var StyleSheet = /*#__PURE__*/function () {
 }();
 
 
-
-
-/***/ }),
-
-/***/ "./node_modules/@emotion/styled/base/dist/emotion-styled-base.browser.esm.js":
-/*!***********************************************************************************!*\
-  !*** ./node_modules/@emotion/styled/base/dist/emotion-styled-base.browser.esm.js ***!
-  \***********************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-var react__WEBPACK_IMPORTED_MODULE_1___namespace_cache;
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _emotion_is_prop_valid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @emotion/is-prop-valid */ "./node_modules/@emotion/is-prop-valid/dist/emotion-is-prop-valid.browser.esm.js");
-/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-element-cbed451f.browser.esm.js");
-/* harmony import */ var _emotion_utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @emotion/utils */ "./node_modules/@emotion/utils/dist/emotion-utils.browser.esm.js");
-/* harmony import */ var _emotion_serialize__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @emotion/serialize */ "./node_modules/@emotion/serialize/dist/emotion-serialize.browser.esm.js");
-
-
-
-
-
-
-
-
-var testOmitPropsOnStringTag = _emotion_is_prop_valid__WEBPACK_IMPORTED_MODULE_2__["default"];
-
-var testOmitPropsOnComponent = function testOmitPropsOnComponent(key) {
-  return key !== 'theme';
-};
-
-var getDefaultShouldForwardProp = function getDefaultShouldForwardProp(tag) {
-  return typeof tag === 'string' && // 96 is one less than the char code
-  // for "a" so this is checking that
-  // it's a lowercase character
-  tag.charCodeAt(0) > 96 ? testOmitPropsOnStringTag : testOmitPropsOnComponent;
-};
-var composeShouldForwardProps = function composeShouldForwardProps(tag, options, isReal) {
-  var shouldForwardProp;
-
-  if (options) {
-    var optionsShouldForwardProp = options.shouldForwardProp;
-    shouldForwardProp = tag.__emotion_forwardProp && optionsShouldForwardProp ? function (propName) {
-      return tag.__emotion_forwardProp(propName) && optionsShouldForwardProp(propName);
-    } : optionsShouldForwardProp;
-  }
-
-  if (typeof shouldForwardProp !== 'function' && isReal) {
-    shouldForwardProp = tag.__emotion_forwardProp;
-  }
-
-  return shouldForwardProp;
-};
-
-var useInsertionEffect = /*#__PURE__*/ (react__WEBPACK_IMPORTED_MODULE_1___namespace_cache || (react__WEBPACK_IMPORTED_MODULE_1___namespace_cache = __webpack_require__.t(react__WEBPACK_IMPORTED_MODULE_1__, 2)))['useInsertion' + 'Effect'] ? /*#__PURE__*/ (react__WEBPACK_IMPORTED_MODULE_1___namespace_cache || (react__WEBPACK_IMPORTED_MODULE_1___namespace_cache = __webpack_require__.t(react__WEBPACK_IMPORTED_MODULE_1__, 2)))['useInsertion' + 'Effect'] : function useInsertionEffect(create) {
-  create();
-};
-function useInsertionEffectMaybe(create) {
-
-  useInsertionEffect(create);
-}
-
-var ILLEGAL_ESCAPE_SEQUENCE_ERROR = "You have illegal escape sequence in your template literal, most likely inside content's property value.\nBecause you write your CSS inside a JavaScript string you actually have to do double escaping, so for example \"content: '\\00d7';\" should become \"content: '\\\\00d7';\".\nYou can read more about this here:\nhttps://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#ES2018_revision_of_illegal_escape_sequences";
-
-var Insertion = function Insertion(_ref) {
-  var cache = _ref.cache,
-      serialized = _ref.serialized,
-      isStringTag = _ref.isStringTag;
-  (0,_emotion_utils__WEBPACK_IMPORTED_MODULE_3__.registerStyles)(cache, serialized, isStringTag);
-  var rules = useInsertionEffectMaybe(function () {
-    return (0,_emotion_utils__WEBPACK_IMPORTED_MODULE_3__.insertStyles)(cache, serialized, isStringTag);
-  });
-
-  return null;
-};
-
-var createStyled = function createStyled(tag, options) {
-  if (true) {
-    if (tag === undefined) {
-      throw new Error('You are trying to create a styled element with an undefined component.\nYou may have forgotten to import it.');
-    }
-  }
-
-  var isReal = tag.__emotion_real === tag;
-  var baseTag = isReal && tag.__emotion_base || tag;
-  var identifierName;
-  var targetClassName;
-
-  if (options !== undefined) {
-    identifierName = options.label;
-    targetClassName = options.target;
-  }
-
-  var shouldForwardProp = composeShouldForwardProps(tag, options, isReal);
-  var defaultShouldForwardProp = shouldForwardProp || getDefaultShouldForwardProp(baseTag);
-  var shouldUseAs = !defaultShouldForwardProp('as');
-  return function () {
-    var args = arguments;
-    var styles = isReal && tag.__emotion_styles !== undefined ? tag.__emotion_styles.slice(0) : [];
-
-    if (identifierName !== undefined) {
-      styles.push("label:" + identifierName + ";");
-    }
-
-    if (args[0] == null || args[0].raw === undefined) {
-      styles.push.apply(styles, args);
-    } else {
-      if ( true && args[0][0] === undefined) {
-        console.error(ILLEGAL_ESCAPE_SEQUENCE_ERROR);
-      }
-
-      styles.push(args[0][0]);
-      var len = args.length;
-      var i = 1;
-
-      for (; i < len; i++) {
-        if ( true && args[0][i] === undefined) {
-          console.error(ILLEGAL_ESCAPE_SEQUENCE_ERROR);
-        }
-
-        styles.push(args[i], args[0][i]);
-      }
-    } // $FlowFixMe: we need to cast StatelessFunctionalComponent to our PrivateStyledComponent class
-
-
-    var Styled = (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.w)(function (props, cache, ref) {
-      var FinalTag = shouldUseAs && props.as || baseTag;
-      var className = '';
-      var classInterpolations = [];
-      var mergedProps = props;
-
-      if (props.theme == null) {
-        mergedProps = {};
-
-        for (var key in props) {
-          mergedProps[key] = props[key];
-        }
-
-        mergedProps.theme = (0,react__WEBPACK_IMPORTED_MODULE_1__.useContext)(_emotion_react__WEBPACK_IMPORTED_MODULE_5__.T);
-      }
-
-      if (typeof props.className === 'string') {
-        className = (0,_emotion_utils__WEBPACK_IMPORTED_MODULE_3__.getRegisteredStyles)(cache.registered, classInterpolations, props.className);
-      } else if (props.className != null) {
-        className = props.className + " ";
-      }
-
-      var serialized = (0,_emotion_serialize__WEBPACK_IMPORTED_MODULE_4__.serializeStyles)(styles.concat(classInterpolations), cache.registered, mergedProps);
-      className += cache.key + "-" + serialized.name;
-
-      if (targetClassName !== undefined) {
-        className += " " + targetClassName;
-      }
-
-      var finalShouldForwardProp = shouldUseAs && shouldForwardProp === undefined ? getDefaultShouldForwardProp(FinalTag) : defaultShouldForwardProp;
-      var newProps = {};
-
-      for (var _key in props) {
-        if (shouldUseAs && _key === 'as') continue;
-
-        if ( // $FlowFixMe
-        finalShouldForwardProp(_key)) {
-          newProps[_key] = props[_key];
-        }
-      }
-
-      newProps.className = className;
-      newProps.ref = ref;
-      return /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_1__.createElement)(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_1__.createElement)(Insertion, {
-        cache: cache,
-        serialized: serialized,
-        isStringTag: typeof FinalTag === 'string'
-      }), /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_1__.createElement)(FinalTag, newProps));
-    });
-    Styled.displayName = identifierName !== undefined ? identifierName : "Styled(" + (typeof baseTag === 'string' ? baseTag : baseTag.displayName || baseTag.name || 'Component') + ")";
-    Styled.defaultProps = tag.defaultProps;
-    Styled.__emotion_real = Styled;
-    Styled.__emotion_base = baseTag;
-    Styled.__emotion_styles = styles;
-    Styled.__emotion_forwardProp = shouldForwardProp;
-    Object.defineProperty(Styled, 'toString', {
-      value: function value() {
-        if (targetClassName === undefined && "development" !== 'production') {
-          return 'NO_COMPONENT_SELECTOR';
-        } // $FlowFixMe: coerce undefined to string
-
-
-        return "." + targetClassName;
-      }
-    });
-
-    Styled.withComponent = function (nextTag, nextOptions) {
-      return createStyled(nextTag, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, options, nextOptions, {
-        shouldForwardProp: composeShouldForwardProps(Styled, nextOptions, true)
-      })).apply(void 0, styles);
-    };
-
-    return Styled;
-  };
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createStyled);
-
-
-/***/ }),
-
-/***/ "./node_modules/@emotion/styled/dist/emotion-styled.browser.esm.js":
-/*!*************************************************************************!*\
-  !*** ./node_modules/@emotion/styled/dist/emotion-styled.browser.esm.js ***!
-  \*************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _emotion_is_prop_valid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @emotion/is-prop-valid */ "./node_modules/@emotion/is-prop-valid/dist/emotion-is-prop-valid.browser.esm.js");
-/* harmony import */ var _base_dist_emotion_styled_base_browser_esm_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../base/dist/emotion-styled-base.browser.esm.js */ "./node_modules/@emotion/styled/base/dist/emotion-styled-base.browser.esm.js");
-/* harmony import */ var _emotion_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @emotion/utils */ "./node_modules/@emotion/utils/dist/emotion-utils.browser.esm.js");
-/* harmony import */ var _emotion_serialize__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @emotion/serialize */ "./node_modules/@emotion/serialize/dist/emotion-serialize.browser.esm.js");
-
-
-
-
-
-
-
-
-var tags = ['a', 'abbr', 'address', 'area', 'article', 'aside', 'audio', 'b', 'base', 'bdi', 'bdo', 'big', 'blockquote', 'body', 'br', 'button', 'canvas', 'caption', 'cite', 'code', 'col', 'colgroup', 'data', 'datalist', 'dd', 'del', 'details', 'dfn', 'dialog', 'div', 'dl', 'dt', 'em', 'embed', 'fieldset', 'figcaption', 'figure', 'footer', 'form', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'head', 'header', 'hgroup', 'hr', 'html', 'i', 'iframe', 'img', 'input', 'ins', 'kbd', 'keygen', 'label', 'legend', 'li', 'link', 'main', 'map', 'mark', 'marquee', 'menu', 'menuitem', 'meta', 'meter', 'nav', 'noscript', 'object', 'ol', 'optgroup', 'option', 'output', 'p', 'param', 'picture', 'pre', 'progress', 'q', 'rp', 'rt', 'ruby', 's', 'samp', 'script', 'section', 'select', 'small', 'source', 'span', 'strong', 'style', 'sub', 'summary', 'sup', 'table', 'tbody', 'td', 'textarea', 'tfoot', 'th', 'thead', 'time', 'title', 'tr', 'track', 'u', 'ul', 'var', 'video', 'wbr', // SVG
-'circle', 'clipPath', 'defs', 'ellipse', 'foreignObject', 'g', 'image', 'line', 'linearGradient', 'mask', 'path', 'pattern', 'polygon', 'polyline', 'radialGradient', 'rect', 'stop', 'svg', 'text', 'tspan'];
-
-var newStyled = _base_dist_emotion_styled_base_browser_esm_js__WEBPACK_IMPORTED_MODULE_3__["default"].bind();
-tags.forEach(function (tagName) {
-  // $FlowFixMe: we can ignore this because its exposed type is defined by the CreateStyled type
-  newStyled[tagName] = newStyled(tagName);
-});
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (newStyled);
 
 
 /***/ }),
@@ -12347,9 +12070,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var _components_Example__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Example */ "./resources/js/components/Example.js");
+/* harmony import */ var _contexts_CategoryContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contexts/CategoryContext */ "./resources/js/contexts/CategoryContext.js");
 /* harmony import */ var _components_Memo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Memo */ "./resources/js/components/Memo.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _components_Category__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Category */ "./resources/js/components/Category.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes React and other helpers. It's a great starting point while
@@ -12371,16 +12095,23 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 
+
+
 function App() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_Memo__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_contexts_CategoryContext__WEBPACK_IMPORTED_MODULE_2__.CategoryProvider, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+        className: "d-flex",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_Category__WEBPACK_IMPORTED_MODULE_4__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_Memo__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
+      })
+    })
   });
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
 
 if (document.getElementById('app')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(App, {}), document.getElementById('app'));
+  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(App, {}), document.getElementById('app'));
 }
 
 /***/ }),
@@ -12421,10 +12152,10 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/js/components/Example.js":
-/*!********************************************!*\
-  !*** ./resources/js/components/Example.js ***!
-  \********************************************/
+/***/ "./resources/js/components/Category.jsx":
+/*!**********************************************!*\
+  !*** ./resources/js/components/Category.jsx ***!
+  \**********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -12433,14 +12164,42 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @emotion/styled */ "./node_modules/@emotion/styled/dist/emotion-styled.browser.esm.js");
-/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.browser.esm.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-var _templateObject;
+/* harmony import */ var react_textarea_autosize__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-textarea-autosize */ "./node_modules/react-textarea-autosize/dist/react-textarea-autosize.browser.esm.js");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @fortawesome/free-regular-svg-icons */ "./node_modules/@fortawesome/free-regular-svg-icons/index.es.js");
+/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.browser.esm.js");
+/* harmony import */ var _contexts_CategoryContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../contexts/CategoryContext */ "./resources/js/contexts/CategoryContext.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @emotion/react/jsx-runtime */ "./node_modules/@emotion/react/jsx-runtime/dist/emotion-react-jsx-runtime.browser.esm.js");
+/** @jsxImportSource @emotion/react */
+
+
+var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7;
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
@@ -12448,33 +12207,178 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-function Example() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-    className: "container",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-      className: "row justify-content-center",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        className: "col-md-8",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-          className: "card",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-            className: "card-header",
-            css: red,
-            children: "Example Component"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-            className: "card-body",
-            children: "I'm an example component!"
-          })]
+
+
+
+
+
+function Category() {
+  var _jsx2;
+
+  var _useCategoryContext = (0,_contexts_CategoryContext__WEBPACK_IMPORTED_MODULE_2__.useCategoryContext)(),
+      category = _useCategoryContext.category,
+      setCategory = _useCategoryContext.setCategory;
+
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      categories = _useState2[0],
+      setCategories = _useState2[1];
+
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    axios__WEBPACK_IMPORTED_MODULE_3___default().get('/category').then(function (response) {
+      return setCategories(response.data);
+    })["catch"](function (error) {
+      return console.log(error);
+    });
+  }, []);
+
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+      _useState4 = _slicedToArray(_useState3, 2),
+      name = _useState4[0],
+      setName = _useState4[1];
+
+  var handleTextChange = function handleTextChange(e) {
+    setName(e.target.value);
+  };
+
+  var createNewCategory = function createNewCategory() {
+    axios__WEBPACK_IMPORTED_MODULE_3___default().post('/category', {
+      name: name
+    }).then(function (response) {
+      setCategories([response.data].concat(_toConsumableArray(categories)));
+    }).then(function () {
+      setName("");
+    })["catch"](function (error) {
+      console.log(error);
+    });
+  };
+
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+      _useState6 = _slicedToArray(_useState5, 2),
+      editedName = _useState6[0],
+      setEditedName = _useState6[1];
+
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+      _useState8 = _slicedToArray(_useState7, 2),
+      editedNameKey = _useState8[0],
+      setEditedNameKey = _useState8[1];
+
+  var editCategory = function editCategory(e) {
+    setEditedName(e.target.value);
+    setEditedNameKey(e.target.name);
+  };
+
+  var updateCategory = function updateCategory() {
+    axios__WEBPACK_IMPORTED_MODULE_3___default().put('/category', {
+      id: editedNameKey,
+      name: editedName
+    }).then(function () {
+      setEditedName("");
+      setEditedNameKey("");
+    })["catch"](function (error) {
+      console.log(error);
+    });
+  };
+
+  var deleteCategory = function deleteCategory(e) {
+    var id = e.target.name;
+    axios__WEBPACK_IMPORTED_MODULE_3___default()["delete"]('/category/' + id, {
+      id: id
+    }).then(function () {
+      var m = categories.filter(function (category) {
+        return category.id.toString() !== id;
+      });
+      setCategories(m);
+    })["catch"](function (error) {
+      console.log(error);
+    });
+  };
+
+  return (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
+    children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      className: "container",
+      children: [(0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        className: " mb-2",
+        children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          className: "row justify-content-center",
+          children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            className: "col-md-8",
+            children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              className: "card",
+              children: [(0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                className: "card-header",
+                children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", (_jsx2 = {
+                  className: "btn-primary",
+                  onClick: createNewCategory
+                }, _defineProperty(_jsx2, "className", "border-0"), _defineProperty(_jsx2, "children", "create CATEGORY"), _jsx2))
+              }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_textarea_autosize__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["resize: none;"]))),
+                value: name,
+                onChange: handleTextChange,
+                className: "card-body",
+                autoFocus: true
+              })]
+            })
+          })
         })
-      })
+      }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("hr", {}), categories.map(function (category) {
+        return (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          className: "container mb-2",
+          children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            className: "row justify-content-center",
+            children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+              className: "col-md-8",
+              children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                className: "card",
+                children: [(0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                  className: "card-header",
+                  css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["justify-content: space-between; display: flex;"]))),
+                  children: [(0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                    onClick: updateCategory,
+                    disabled: editedNameKey !== category.id.toString(),
+                    className: "border-0",
+                    children: "update category"
+                  }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    children: [(0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                      onClick: function onClick() {
+                        return setCategory(category.id);
+                      },
+                      name: category.id,
+                      className: "border-0",
+                      children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+                        css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["pointer-events: none;"]))),
+                        icon: _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_7__.faHandPointer
+                      })
+                    }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                      onClick: deleteCategory,
+                      name: category.id,
+                      className: "border-0",
+                      css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["margin-left: 0.5rem;"]))),
+                      children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+                        css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["pointer-events: none;"]))),
+                        icon: _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_7__.faTrashCan
+                      })
+                    })]
+                  })]
+                }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_textarea_autosize__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                  css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["resize: none;"]))),
+                  className: "card-body",
+                  defaultValue: category.name,
+                  name: category.id,
+                  onChange: editCategory,
+                  disabled: editedName && editedNameKey !== category.id.toString()
+                })]
+              })
+            })
+          })
+        }, category.id);
+      })]
     })
   });
 }
 
-var red = (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    background-color: red !important;\n"])));
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Example); // if (document.getElementById('example')) {
-//     ReactDOM.render(<Example />, document.getElementById('example'));
-// }
+var flex = (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n        display: flex;\n        justify-content: space-between;\n    "])));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Category);
 
 /***/ }),
 
@@ -12490,11 +12394,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_textarea_autosize__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-textarea-autosize */ "./node_modules/react-textarea-autosize/dist/react-textarea-autosize.browser.esm.js");
 /* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
 /* harmony import */ var _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @fortawesome/free-regular-svg-icons */ "./node_modules/@fortawesome/free-regular-svg-icons/index.es.js");
-/* harmony import */ var react_textarea_autosize__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-textarea-autosize */ "./node_modules/react-textarea-autosize/dist/react-textarea-autosize.browser.esm.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.browser.esm.js");
+/* harmony import */ var _contexts_CategoryContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../contexts/CategoryContext */ "./resources/js/contexts/CategoryContext.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @emotion/react/jsx-runtime */ "./node_modules/@emotion/react/jsx-runtime/dist/emotion-react-jsx-runtime.browser.esm.js");
@@ -12541,18 +12445,22 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 function Memo() {
   var _jsx2;
 
+  var _useCategoryContext = (0,_contexts_CategoryContext__WEBPACK_IMPORTED_MODULE_2__.useCategoryContext)(),
+      category = _useCategoryContext.category,
+      setCategory = _useCategoryContext.setCategory;
+
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
       _useState2 = _slicedToArray(_useState, 2),
       memos = _useState2[0],
       setMemos = _useState2[1];
 
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    axios__WEBPACK_IMPORTED_MODULE_3___default().get('/memo').then(function (response) {
+    axios__WEBPACK_IMPORTED_MODULE_3___default().get('/memo/' + category).then(function (response) {
       return setMemos(response.data);
     })["catch"](function (error) {
       return console.log(error);
     });
-  }, []);
+  }, [category]);
 
   var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
       _useState4 = _slicedToArray(_useState3, 2),
@@ -12620,86 +12528,141 @@ function Memo() {
     navigator.clipboard.writeText(memo);
   };
 
-  return (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
-    children: [(0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-      className: "container mb-2",
-      children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-        className: "row justify-content-center",
-        children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-          className: "col-md-8",
-          children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-            className: "card",
-            children: [(0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-              className: "card-header",
-              children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", (_jsx2 = {
-                className: "btn-primary",
-                onClick: createNewMemo
-              }, _defineProperty(_jsx2, "className", "border-0"), _defineProperty(_jsx2, "children", "create memo"), _jsx2))
-            }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_textarea_autosize__WEBPACK_IMPORTED_MODULE_5__["default"], {
-              css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["resize: none;"]))),
-              value: text,
-              onChange: handleTextChange,
-              className: "card-body",
-              autoFocus: true
-            })]
-          })
-        })
-      })
-    }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("hr", {}), memos.map(function (memo) {
-      return (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-        className: "container mb-2",
+  return (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
+    children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      className: "container",
+      children: [(0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        className: " mb-2",
         children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
           className: "row justify-content-center",
           children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
             className: "col-md-8",
             children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
               className: "card",
-              children: [(0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+              children: [(0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                 className: "card-header",
-                css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["justify-content: space-between; display: flex;"]))),
-                children: [(0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
-                  onClick: updateMemo,
-                  disabled: editedTextKey !== memo.id.toString(),
-                  className: "border-0",
-                  children: "update memo"
-                }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-                  children: [(0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
-                    onClick: deleteMemo,
-                    name: memo.id,
-                    className: "border-0",
-                    children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
-                      css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["pointer-events: none;"]))),
-                      icon: _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_7__.faTrashCan
-                    })
-                  }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
-                    onClick: function onClick() {
-                      return handleCopy(memo.text);
-                    },
-                    className: "border-0",
-                    css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["margin-left: 0.5rem;"]))),
-                    children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
-                      icon: _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_7__.faCopy
-                    })
-                  })]
-                })]
+                children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", (_jsx2 = {
+                  className: "btn-primary",
+                  onClick: createNewMemo
+                }, _defineProperty(_jsx2, "className", "border-0"), _defineProperty(_jsx2, "children", "create memo"), _jsx2))
               }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_textarea_autosize__WEBPACK_IMPORTED_MODULE_5__["default"], {
-                css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["resize: none;"]))),
+                css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["resize: none;"]))),
+                value: text,
+                onChange: handleTextChange,
                 className: "card-body",
-                defaultValue: memo.text,
-                name: memo.id,
-                onChange: editMemo,
-                disabled: editedText && editedTextKey !== memo.id.toString()
+                autoFocus: true
               })]
             })
           })
         })
-      }, memo.id);
-    })]
+      }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("hr", {}), memos.map(function (memo) {
+        return (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          className: "container mb-2",
+          children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            className: "row justify-content-center",
+            children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+              className: "col-md-8",
+              children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                className: "card",
+                children: [(0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                  className: "card-header",
+                  css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["justify-content: space-between; display: flex;"]))),
+                  children: [(0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                    onClick: updateMemo,
+                    disabled: editedTextKey !== memo.id.toString(),
+                    className: "border-0",
+                    children: "update memo"
+                  }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                    children: [(0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                      onClick: deleteMemo,
+                      name: memo.id,
+                      className: "border-0",
+                      children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+                        css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["pointer-events: none;"]))),
+                        icon: _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_7__.faTrashCan
+                      })
+                    }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                      onClick: function onClick() {
+                        return handleCopy(memo.text);
+                      },
+                      className: "border-0",
+                      css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["margin-left: 0.5rem;"]))),
+                      children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+                        icon: _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_7__.faCopy
+                      })
+                    })]
+                  })]
+                }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_textarea_autosize__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                  css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["resize: none;"]))),
+                  className: "card-body",
+                  defaultValue: memo.text,
+                  name: memo.id,
+                  onChange: editMemo,
+                  disabled: editedText && editedTextKey !== memo.id.toString()
+                })]
+              })
+            })
+          })
+        }, memo.id);
+      })]
+    })
   });
 }
 
 var flex = (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n        display: flex;\n        justify-content: space-between;\n    "])));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Memo);
+
+/***/ }),
+
+/***/ "./resources/js/contexts/CategoryContext.js":
+/*!**************************************************!*\
+  !*** ./resources/js/contexts/CategoryContext.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "useCategoryContext": () => (/* binding */ useCategoryContext),
+/* harmony export */   "CategoryProvider": () => (/* binding */ CategoryProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+var CategoryContext = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.createContext)();
+function useCategoryContext() {
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(CategoryContext);
+}
+function CategoryProvider(_ref) {
+  var children = _ref.children;
+
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+      _useState2 = _slicedToArray(_useState, 2),
+      category = _useState2[0],
+      setCategory = _useState2[1];
+
+  var value = {
+    category: category,
+    setCategory: setCategory
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(CategoryContext.Provider, {
+    value: value,
+    children: children
+  });
+}
 
 /***/ }),
 

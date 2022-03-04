@@ -1,24 +1,25 @@
 /** @jsxImportSource @emotion/react */
 'use strict';
 import React, { useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faCopy, faTrashCan} from '@fortawesome/free-regular-svg-icons'
 import TextareaAutosize from 'react-textarea-autosize';
-import ReactDOM from 'react-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCopy, faTrashCan } from '@fortawesome/free-regular-svg-icons'
 import { css, cx, jsx } from '@emotion/react'
+import { useCategoryContext } from '../contexts/CategoryContext';
 import axios from 'axios';
 
 function Memo() {
+    const { category, setCategory } = useCategoryContext();
 
     const [memos, setMemos] = useState([]);
     useEffect(
-            () => {
-                axios
-                    .get('/memo')
-                    .then((response) => setMemos(response.data))
-                    .catch((error) => console.log(error))
-            }
-        , []);
+        () => {
+            axios
+                .get('/memo/' + category)
+                .then((response) => setMemos(response.data))
+                .catch((error) => console.log(error))
+        }
+        , [category]);
 
     const [text, setText] = useState("");
     const handleTextChange = (e) => {
@@ -67,12 +68,12 @@ function Memo() {
     const deleteMemo = (e) => {
         const id = e.target.name
         axios
-            .delete('/memo/'+id, {
+            .delete('/memo/' + id, {
                 id: id
             })
             .then(() => {
-                const m = memos.filter((memo)=> {
-                    return memo.id.toString()!==id
+                const m = memos.filter((memo) => {
+                    return memo.id.toString() !== id
                 })
                 setMemos(m);
             })
@@ -87,48 +88,47 @@ function Memo() {
 
     return (
         <>
-            <div className="container mb-2">
-                <div className="row justify-content-center">
-                    <div className="col-md-8">
-                        <div className="card">
-                            <div className="card-header">
-                                <button className='btn-primary' onClick={createNewMemo} className="border-0">create memo</button>
+            <div className='container'>
+                <div className=" mb-2">
+                    <div className="row justify-content-center">
+                        <div className="col-md-8">
+                            <div className="card">
+                                <div className="card-header">
+                                    <button className='btn-primary' onClick={createNewMemo} className="border-0">create memo</button>
+                                </div>
+                                <TextareaAutosize css={css`resize: none;`} value={text} onChange={handleTextChange} className="card-body" autoFocus />
                             </div>
-
-                            <TextareaAutosize css={css`resize: none;`} value={text} onChange={handleTextChange} className="card-body" autoFocus />
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <hr />
-
-            {
-                memos.map( memo => {
-                    return (
-                        <div key={memo.id} className="container mb-2">
-                            <div className="row justify-content-center">
-                                <div className="col-md-8">
-                                    <div className="card">
-                                        <div className="card-header" css={css`justify-content: space-between; display: flex;`}>
-                                            <button onClick={updateMemo} disabled={editedTextKey !== memo.id.toString()} className="border-0">update memo</button>
-                                            <div>
-                                                <button onClick={deleteMemo} name={memo.id} className="border-0">
-                                                    <FontAwesomeIcon css={css`pointer-events: none;`} icon={faTrashCan} />
-                                                </button>
-                                                <button onClick={() => handleCopy(memo.text)} className="border-0" css={css `margin-left: 0.5rem;`}><FontAwesomeIcon icon={faCopy} /></button>
+                <hr />
+                {
+                    memos.map(memo => {
+                        return (
+                            <div key={memo.id} className="container mb-2">
+                                <div className="row justify-content-center">
+                                    <div className="col-md-8">
+                                        <div className="card">
+                                            <div className="card-header" css={css`justify-content: space-between; display: flex;`}>
+                                                <button onClick={updateMemo} disabled={editedTextKey !== memo.id.toString()} className="border-0">update memo</button>
+                                                <div>
+                                                    <button onClick={deleteMemo} name={memo.id} className="border-0">
+                                                        <FontAwesomeIcon css={css`pointer-events: none;`} icon={faTrashCan} />
+                                                    </button>
+                                                    <button onClick={() => handleCopy(memo.text)} className="border-0" css={css`margin-left: 0.5rem;`}>
+                                                        <FontAwesomeIcon icon={faCopy} />
+                                                    </button>
+                                                </div>
                                             </div>
-
+                                            <TextareaAutosize css={css`resize: none;`} className="card-body" defaultValue={memo.text} name={memo.id} onChange={editMemo} disabled={editedText && editedTextKey !== memo.id.toString()} />
                                         </div>
-
-                                        <TextareaAutosize css={css`resize: none;`} className="card-body" defaultValue={memo.text} name={memo.id} onChange={editMemo} disabled={editedText && editedTextKey !== memo.id.toString()} />
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    );
-                })
-            }
+                        );
+                    })
+                }
+            </div>
         </>
     );
 

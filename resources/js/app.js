@@ -17,13 +17,19 @@ require('./bootstrap');
 
 import * as React from 'react';
 import ReactDOM from 'react-dom';
-import Example from './components/Example';
+import { CategoryProvider } from './contexts/CategoryContext';
 import Memo from './components/Memo';
+import Category from './components/Category';
 
 function App() {
     return (
         <>
-            <Memo />
+            <CategoryProvider>
+                <div className='d-flex'>
+                    <Category />
+                    <Memo />
+                </div>
+            </CategoryProvider>
         </>
     )
 }

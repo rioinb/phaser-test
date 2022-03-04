@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Memo;
+use App\Models\MemoCategory;
 use Illuminate\Http\Request;
 
-class MemoController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,7 @@ class MemoController extends Controller
     public function index()
     {
         $user = auth()->user();
-        return Memo::where('user_id', $user->id)->orderBy('created_at', 'DESC')->get();
+        return MemoCategory::where('user_id', $user->id)->orderBy('created_at', 'DESC')->get();
     }
 
     /**
@@ -36,36 +36,34 @@ class MemoController extends Controller
      */
     public function store(Request $request)
     {
-        // return $request;
-        $Memo = Memo::create([
+        $Category = MemoCategory::create([
             'user_id' => auth()->user()->id,
-            'text' => $request->text,
-            ]);
+            'name' => $request->name
+        ]);
+
         return response()->json(
-            $Memo
+            $Category
         );
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Memo  $memo
+     * @param  \App\Models\MemoCategory  $memoCategory
      * @return \Illuminate\Http\Response
      */
-    public function show($category_id)
+    public function show(MemoCategory $memoCategory)
     {
-        $user = auth()->user();
-        $memos = Memo::where('user_id', $user->id)->where('category_id', $category_id)->orderBy('created_at', 'DESC')->get()->toArray();
-        return $memos;
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Memo  $memo
+     * @param  \App\Models\MemoCategory  $memoCategory
      * @return \Illuminate\Http\Response
      */
-    public function edit(Memo $memo)
+    public function edit(MemoCategory $memoCategory)
     {
         //
     }
@@ -74,34 +72,26 @@ class MemoController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Memo  $memo
+     * @param  \App\Models\MemoCategory  $memoCategory
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Memo $memo)
+    public function update(Request $request, MemoCategory $memoCategory)
     {
-        $Memo = Memo::findOrFail($request->id)->fill([
-            'text' => $request->text
+        $Category = MemoCategory::findOrFail($request->id)->fill([
+            'name' => $request->name
         ])->save();
-
-        $user = auth()->user();
-        $memos = Memo::where('user_id', $user->id)->orderBy('created_at', 'DESC')->get()->toArray();
-        return $memos;
-
-        // return response()->json(
-        //     $Memo
-        // );
-
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Memo  $memo
+     * @param  \App\Models\MemoCategory  $memoCategory
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(MemoCategory $memoCategory, $id)
     {
-        Memo::where('id', $id)->delete();
+        MemoCategory::find($id)->delete();
+
         return response()->json([]);
     }
 }
