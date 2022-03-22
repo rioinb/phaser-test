@@ -40,6 +40,7 @@ class MemoController extends Controller
         $Memo = Memo::create([
             'user_id' => auth()->user()->id,
             'text' => $request->text,
+            'category_id' => $request->category_id
             ]);
         return response()->json(
             $Memo

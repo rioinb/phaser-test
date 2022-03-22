@@ -7,11 +7,11 @@ export function useCategoryContext() {
 }
 
 export function CategoryProvider({children}) {
-    const [category, setCategory] = useState("");
+    const [selectedCategory, setSelectedCategory] = useState("");
 
     const value = {
-        category,
-        setCategory
+        selectedCategory,
+        setSelectedCategory
     };
 
     return (

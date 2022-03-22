@@ -12100,9 +12100,15 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 function App() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_contexts_CategoryContext__WEBPACK_IMPORTED_MODULE_2__.CategoryProvider, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
-        className: "d-flex",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_Category__WEBPACK_IMPORTED_MODULE_4__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_Memo__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+        className: "container",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+          className: "d-flex",
+          style: {
+            margin: '0 auto'
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_Category__WEBPACK_IMPORTED_MODULE_4__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_Memo__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
+        })
       })
     })
   });
@@ -12164,10 +12170,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_textarea_autosize__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-textarea-autosize */ "./node_modules/react-textarea-autosize/dist/react-textarea-autosize.browser.esm.js");
+/* harmony import */ var react_textarea_autosize__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-textarea-autosize */ "./node_modules/react-textarea-autosize/dist/react-textarea-autosize.browser.esm.js");
 /* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
 /* harmony import */ var _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @fortawesome/free-regular-svg-icons */ "./node_modules/@fortawesome/free-regular-svg-icons/index.es.js");
-/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.browser.esm.js");
+/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.browser.esm.js");
 /* harmony import */ var _contexts_CategoryContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../contexts/CategoryContext */ "./resources/js/contexts/CategoryContext.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
@@ -12175,11 +12181,11 @@ __webpack_require__.r(__webpack_exports__);
 /** @jsxImportSource @emotion/react */
 
 
-var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7;
-
-function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7, _templateObject8;
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 
@@ -12216,8 +12222,8 @@ function Category() {
   var _jsx2;
 
   var _useCategoryContext = (0,_contexts_CategoryContext__WEBPACK_IMPORTED_MODULE_2__.useCategoryContext)(),
-      category = _useCategoryContext.category,
-      setCategory = _useCategoryContext.setCategory;
+      selectedCategory = _useCategoryContext.selectedCategory,
+      setSelectedCategory = _useCategoryContext.setSelectedCategory;
 
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
       _useState2 = _slicedToArray(_useState, 2),
@@ -12296,13 +12302,14 @@ function Category() {
 
   return (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
     children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-      className: "container",
+      className: "",
+      css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["flex: 2; margin-right: 48px;"]))),
       children: [(0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
         className: " mb-2",
         children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-          className: "row justify-content-center",
+          className: "row",
           children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-            className: "col-md-8",
+            className: "",
             children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
               className: "card",
               children: [(0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
@@ -12311,8 +12318,8 @@ function Category() {
                   className: "btn-primary",
                   onClick: createNewCategory
                 }, _defineProperty(_jsx2, "className", "border-0"), _defineProperty(_jsx2, "children", "create CATEGORY"), _jsx2))
-              }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_textarea_autosize__WEBPACK_IMPORTED_MODULE_5__["default"], {
-                css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["resize: none;"]))),
+              }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_textarea_autosize__WEBPACK_IMPORTED_MODULE_6__["default"], {
+                css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.css)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["resize: none;"]))),
                 value: name,
                 onChange: handleTextChange,
                 className: "card-body",
@@ -12323,16 +12330,16 @@ function Category() {
         })
       }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("hr", {}), categories.map(function (category) {
         return (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-          className: "container mb-2",
+          className: "mb-2",
           children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-            className: "row justify-content-center",
+            className: "row",
             children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-              className: "col-md-8",
+              className: "",
               children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                 className: "card",
                 children: [(0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                   className: "card-header",
-                  css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["justify-content: space-between; display: flex;"]))),
+                  css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.css)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["justify-content: space-between; display: flex;"]))),
                   children: [(0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                     onClick: updateCategory,
                     disabled: editedNameKey !== category.id.toString(),
@@ -12340,28 +12347,28 @@ function Category() {
                     children: "update category"
                   }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                     children: [(0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
-                      onClick: function onClick() {
-                        return setCategory(category.id);
-                      },
-                      name: category.id,
-                      className: "border-0",
-                      children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
-                        css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["pointer-events: none;"]))),
-                        icon: _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_7__.faHandPointer
-                      })
-                    }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                       onClick: deleteCategory,
                       name: category.id,
                       className: "border-0",
-                      css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["margin-left: 0.5rem;"]))),
                       children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
-                        css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["pointer-events: none;"]))),
+                        css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.css)(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["pointer-events: none;"]))),
                         icon: _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_7__.faTrashCan
+                      })
+                    }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                      onClick: function onClick() {
+                        return setSelectedCategory(category.id);
+                      },
+                      name: category.id,
+                      className: "border-0",
+                      css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.css)(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["margin-left: 0.5rem;"]))),
+                      children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+                        css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.css)(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["pointer-events: none;"]))),
+                        icon: _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_7__.faHandPointRight
                       })
                     })]
                   })]
-                }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_textarea_autosize__WEBPACK_IMPORTED_MODULE_5__["default"], {
-                  css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["resize: none;"]))),
+                }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_textarea_autosize__WEBPACK_IMPORTED_MODULE_6__["default"], {
+                  css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.css)(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["resize: none;"]))),
                   className: "card-body",
                   defaultValue: category.name,
                   name: category.id,
@@ -12377,7 +12384,7 @@ function Category() {
   });
 }
 
-var flex = (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n        display: flex;\n        justify-content: space-between;\n    "])));
+var flex = (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.css)(_templateObject8 || (_templateObject8 = _taggedTemplateLiteral(["\n        display: flex;\n        justify-content: space-between;\n    "])));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Category);
 
 /***/ }),
@@ -12394,10 +12401,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_textarea_autosize__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-textarea-autosize */ "./node_modules/react-textarea-autosize/dist/react-textarea-autosize.browser.esm.js");
+/* harmony import */ var react_textarea_autosize__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-textarea-autosize */ "./node_modules/react-textarea-autosize/dist/react-textarea-autosize.browser.esm.js");
 /* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
 /* harmony import */ var _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @fortawesome/free-regular-svg-icons */ "./node_modules/@fortawesome/free-regular-svg-icons/index.es.js");
-/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.browser.esm.js");
+/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.browser.esm.js");
 /* harmony import */ var _contexts_CategoryContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../contexts/CategoryContext */ "./resources/js/contexts/CategoryContext.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
@@ -12405,11 +12412,11 @@ __webpack_require__.r(__webpack_exports__);
 /** @jsxImportSource @emotion/react */
 
 
-var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6;
-
-function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7;
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 
@@ -12446,8 +12453,8 @@ function Memo() {
   var _jsx2;
 
   var _useCategoryContext = (0,_contexts_CategoryContext__WEBPACK_IMPORTED_MODULE_2__.useCategoryContext)(),
-      category = _useCategoryContext.category,
-      setCategory = _useCategoryContext.setCategory;
+      selectedCategory = _useCategoryContext.selectedCategory,
+      setSelectedCategory = _useCategoryContext.setSelectedCategory;
 
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
       _useState2 = _slicedToArray(_useState, 2),
@@ -12455,12 +12462,12 @@ function Memo() {
       setMemos = _useState2[1];
 
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    axios__WEBPACK_IMPORTED_MODULE_3___default().get('/memo/' + category).then(function (response) {
+    axios__WEBPACK_IMPORTED_MODULE_3___default().get('/memo/' + selectedCategory).then(function (response) {
       return setMemos(response.data);
     })["catch"](function (error) {
       return console.log(error);
     });
-  }, [category]);
+  }, [selectedCategory]);
 
   var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
       _useState4 = _slicedToArray(_useState3, 2),
@@ -12473,7 +12480,8 @@ function Memo() {
 
   var createNewMemo = function createNewMemo() {
     axios__WEBPACK_IMPORTED_MODULE_3___default().post('/memo', {
-      text: text
+      text: text,
+      category_id: selectedCategory
     }).then(function (response) {
       setMemos([response.data].concat(_toConsumableArray(memos)));
     }).then(function () {
@@ -12530,13 +12538,14 @@ function Memo() {
 
   return (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
     children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-      className: "container",
+      className: "",
+      css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["flex: 6;"]))),
       children: [(0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
         className: " mb-2",
         children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-          className: "row justify-content-center",
+          className: "row",
           children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-            className: "col-md-8",
+            className: "",
             children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
               className: "card",
               children: [(0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
@@ -12544,9 +12553,9 @@ function Memo() {
                 children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", (_jsx2 = {
                   className: "btn-primary",
                   onClick: createNewMemo
-                }, _defineProperty(_jsx2, "className", "border-0"), _defineProperty(_jsx2, "children", "create memo"), _jsx2))
-              }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_textarea_autosize__WEBPACK_IMPORTED_MODULE_5__["default"], {
-                css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["resize: none;"]))),
+                }, _defineProperty(_jsx2, "className", "border-0"), _defineProperty(_jsx2, "disabled", !selectedCategory), _defineProperty(_jsx2, "children", "create memo"), _jsx2))
+              }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_textarea_autosize__WEBPACK_IMPORTED_MODULE_6__["default"], {
+                css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.css)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["resize: none;"]))),
                 value: text,
                 onChange: handleTextChange,
                 className: "card-body",
@@ -12557,16 +12566,16 @@ function Memo() {
         })
       }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("hr", {}), memos.map(function (memo) {
         return (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-          className: "container mb-2",
+          className: " mb-2",
           children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-            className: "row justify-content-center",
+            className: "row ",
             children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-              className: "col-md-8",
+              className: "",
               children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                 className: "card",
                 children: [(0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                   className: "card-header",
-                  css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["justify-content: space-between; display: flex;"]))),
+                  css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.css)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["justify-content: space-between; display: flex;"]))),
                   children: [(0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                     onClick: updateMemo,
                     disabled: editedTextKey !== memo.id.toString(),
@@ -12578,7 +12587,7 @@ function Memo() {
                       name: memo.id,
                       className: "border-0",
                       children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
-                        css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["pointer-events: none;"]))),
+                        css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.css)(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["pointer-events: none;"]))),
                         icon: _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_7__.faTrashCan
                       })
                     }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
@@ -12586,14 +12595,14 @@ function Memo() {
                         return handleCopy(memo.text);
                       },
                       className: "border-0",
-                      css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["margin-left: 0.5rem;"]))),
+                      css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.css)(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["margin-left: 0.5rem;"]))),
                       children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
                         icon: _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_7__.faCopy
                       })
                     })]
                   })]
-                }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_textarea_autosize__WEBPACK_IMPORTED_MODULE_5__["default"], {
-                  css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["resize: none;"]))),
+                }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_textarea_autosize__WEBPACK_IMPORTED_MODULE_6__["default"], {
+                  css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.css)(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["resize: none;"]))),
                   className: "card-body",
                   defaultValue: memo.text,
                   name: memo.id,
@@ -12609,7 +12618,7 @@ function Memo() {
   });
 }
 
-var flex = (0,_emotion_react__WEBPACK_IMPORTED_MODULE_6__.css)(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n        display: flex;\n        justify-content: space-between;\n    "])));
+var flex = (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.css)(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n        display: flex;\n        justify-content: space-between;\n    "])));
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Memo);
 
 /***/ }),
@@ -12651,12 +12660,12 @@ function CategoryProvider(_ref) {
 
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
       _useState2 = _slicedToArray(_useState, 2),
-      category = _useState2[0],
-      setCategory = _useState2[1];
+      selectedCategory = _useState2[0],
+      setSelectedCategory = _useState2[1];
 
   var value = {
-    category: category,
-    setCategory: setCategory
+    selectedCategory: selectedCategory,
+    setSelectedCategory: setSelectedCategory
   };
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(CategoryContext.Provider, {
     value: value,

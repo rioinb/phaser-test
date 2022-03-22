@@ -33,8 +33,8 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
-
+                    <ul class="navbar-nav me-auto ms-5">
+                        <li><a href="/home" class="text-decoration-none link-dark">All Memos</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

@@ -9,17 +9,17 @@ import { useCategoryContext } from '../contexts/CategoryContext';
 import axios from 'axios';
 
 function Memo() {
-    const { category, setCategory } = useCategoryContext();
+    const { selectedCategory, setSelectedCategory } = useCategoryContext();
 
     const [memos, setMemos] = useState([]);
     useEffect(
         () => {
             axios
-                .get('/memo/' + category)
+                .get('/memo/' + selectedCategory)
                 .then((response) => setMemos(response.data))
                 .catch((error) => console.log(error))
         }
-        , [category]);
+        , [selectedCategory]);
 
     const [text, setText] = useState("");
     const handleTextChange = (e) => {
@@ -29,7 +29,8 @@ function Memo() {
     const createNewMemo = () => {
         axios
             .post('/memo', {
-                text: text
+                text: text,
+                category_id: selectedCategory
             })
             .then((response) => {
                 setMemos([response.data, ...memos]);
@@ -88,13 +89,13 @@ function Memo() {
 
     return (
         <>
-            <div className='container'>
+            <div className='' css={css`flex: 6;`}>
                 <div className=" mb-2">
-                    <div className="row justify-content-center">
-                        <div className="col-md-8">
+                    <div className="row">
+                        <div className="">
                             <div className="card">
                                 <div className="card-header">
-                                    <button className='btn-primary' onClick={createNewMemo} className="border-0">create memo</button>
+                                    <button className='btn-primary' onClick={createNewMemo} className="border-0" disabled={!selectedCategory}>create memo</button>
                                 </div>
                                 <TextareaAutosize css={css`resize: none;`} value={text} onChange={handleTextChange} className="card-body" autoFocus />
                             </div>
@@ -105,9 +106,9 @@ function Memo() {
                 {
                     memos.map(memo => {
                         return (
-                            <div key={memo.id} className="container mb-2">
-                                <div className="row justify-content-center">
-                                    <div className="col-md-8">
+                            <div key={memo.id} className=" mb-2">
+                                <div className="row ">
+                                    <div className="">
                                         <div className="card">
                                             <div className="card-header" css={css`justify-content: space-between; display: flex;`}>
                                                 <button onClick={updateMemo} disabled={editedTextKey !== memo.id.toString()} className="border-0">update memo</button>

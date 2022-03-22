@@ -25,9 +25,11 @@ function App() {
     return (
         <>
             <CategoryProvider>
-                <div className='d-flex'>
-                    <Category />
-                    <Memo />
+                <div className='container'>
+                    <div className='d-flex' style={{ margin: '0 auto' }}>
+                        <Category />
+                        <Memo />
+                    </div>
                 </div>
             </CategoryProvider>
         </>
