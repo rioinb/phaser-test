@@ -95,7 +95,7 @@ function Memo() {
                         <div className="">
                             <div className="card">
                                 <div className="card-header">
-                                    <button className='btn-primary' onClick={createNewMemo} className="border-0" disabled={!selectedCategory}>create memo</button>
+                                    <button className='btn-primary border-0' onClick={createNewMemo} disabled={!selectedCategory}>create memo</button>
                                 </div>
                                 <TextareaAutosize css={css`resize: none;`} value={text} onChange={handleTextChange} className="card-body" autoFocus />
                             </div>

@@ -12414,8 +12414,6 @@ __webpack_require__.r(__webpack_exports__);
 
 var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7;
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
@@ -12450,8 +12448,6 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 function Memo() {
-  var _jsx2;
-
   var _useCategoryContext = (0,_contexts_CategoryContext__WEBPACK_IMPORTED_MODULE_2__.useCategoryContext)(),
       selectedCategory = _useCategoryContext.selectedCategory,
       setSelectedCategory = _useCategoryContext.setSelectedCategory;
@@ -12550,10 +12546,12 @@ function Memo() {
               className: "card",
               children: [(0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                 className: "card-header",
-                children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", (_jsx2 = {
-                  className: "btn-primary",
-                  onClick: createNewMemo
-                }, _defineProperty(_jsx2, "className", "border-0"), _defineProperty(_jsx2, "disabled", !selectedCategory), _defineProperty(_jsx2, "children", "create memo"), _jsx2))
+                children: (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                  className: "btn-primary border-0",
+                  onClick: createNewMemo,
+                  disabled: !selectedCategory,
+                  children: "create memo"
+                })
               }), (0,_emotion_react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_textarea_autosize__WEBPACK_IMPORTED_MODULE_6__["default"], {
                 css: (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.css)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["resize: none;"]))),
                 value: text,

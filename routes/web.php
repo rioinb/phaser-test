@@ -21,6 +21,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/game', function () {
+    return view('game');
+});
 
 Route::get('/auth/{provider}/redirect', function ($provider) {
     return Socialite::driver($provider)->redirect();

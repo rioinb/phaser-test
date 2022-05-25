@@ -11,7 +11,10 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/game.js') }}" defer></script>
     <script src="https://kit.fontawesome.com/37dbb1af7d.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
+
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -34,7 +37,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto ms-5">
-                        <li><a href="/home" class="text-decoration-none link-dark">All Memos</a></li>
+                        <li class="me-2"><a href="/home" class="text-decoration-none link-dark">All Memos</a></li>
+                        <li class="me-2"><a href="/game" class="text-decoration-none link-dark">Game</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
